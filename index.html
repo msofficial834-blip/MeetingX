@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <title>MeetingX — Video Meetings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="MeetingX Home">
+        <span class="brand-icon">M<span>X</span></span>
+        <span>Meeting<span class="brand-light">X</span></span>
+      </a>
+      <span class="secure-label">
+        <span class="status-dot"></span>
+        Simple. Private. Connected.
+      </span>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">
+        <span class="eyebrow-line"></span>
+        VIDEO MEETINGS, REIMAGINED
+      </div>
+
+      <h1>Face to face.<br><span>From anywhere.</span></h1>
+
+      <p class="subtitle">
+        Clear conversations, without the complications.
+        Start a meeting or join someone in seconds.
+      </p>
+
+      <div class="actions">
+        <button id="createMeeting" class="btn btn-primary">
+          <span class="button-icon">＋</span>
+          Create a meeting
+          <span class="button-arrow">↗</span>
+        </button>
+
+        <div class="join-box">
+          <label for="meetingLink">Have a meeting link?</label>
+          <div class="join-input-row">
+            <input
+              id="meetingLink"
+              type="text"
+              placeholder="Paste meeting link or code"
+              autocomplete="off"
+            >
+            <button id="joinMeeting" class="btn btn-secondary">
+              Join <span>→</span>
+            </button>
+          </div>
+          <p id="message" class="message" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <span class="feature-icon">◉</span>
+          <span>Face-to-face video</span>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">⌁</span>
+          <span>One simple link</span>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">◇</span>
+          <span>No account needed</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="preview" aria-label="Meeting preview">
+      <div class="preview-glow"></div>
+      <div class="preview-window">
+        <div class="window-top">
+          <div class="window-dots"><i></i><i></i><i></i></div>
+          <span>MEETINGX ROOM</span>
+          <span class="live-label"><i></i> READY TO CONNECT</span>
+        </div>
+
+        <div class="video-placeholder">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="mx-emblem">M<span>X</span></div>
+          <div class="preview-caption">
+            <span class="caption-dot"></span>
+            Your next conversation starts here
+          </div>
+        </div>
+
+        <div class="preview-controls">
+          <span class="control-pill"><i>◉</i> Camera</span>
+          <span class="control-pill"><i>♬</i> Microphone</span>
+          <span class="control-pill control-muted"><i>●</i> End</span>
+        </div>
+      </div>
+      <p class="preview-note">
+        A calmer, cleaner way to connect.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> MeetingX</span>
+      <span>Made for meaningful conversations.</span>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
